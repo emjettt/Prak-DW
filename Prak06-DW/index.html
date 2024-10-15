@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaca Jakarta dengan WeatherAPI</title>
+    <style>
+    body { 
+        background-image: url(https://cdn.pixabay.com/photo/2022/07/12/07/06/lake-7316684_1280.jpg);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin-top: 50px;
+        background-size: cover;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.5);
+        background-blend-mode: lighten;
+    }
+
+    h1, h2 {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Bayangan teks */
+    }
+    .weather-info {
+        margin-bottom: 20px;
+    }
+    .forecast {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    .day {
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 1px;
+        width: 120px;
+        transition: transform 0.3s, box-shadow 0.3s; /* Efek transisi */
+    }
+    .day:hover {
+        transform: scale(1.08); /* Membesarkan sedikit elemen */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Menambahkan bayangan saat hover */
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Cuaca di Bandung</h1>
+    <div id="current-weather" class="weather-info">
+        <!-- Cuaca hari ini akan ditampilkan di sini -->
+    </div>
+
+    <h2>Ramalan Cuaca 7 Hari ke Depan</h2>
+    <div id="weather-forecast" class="forecast">
+        <!-- Ramalan cuaca akan ditampilkan di sini -->
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
